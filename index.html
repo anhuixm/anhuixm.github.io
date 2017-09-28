@@ -757,11 +757,33 @@
         }
       })
     };
+     window.onload=function(){
+      var  page1=document.getElementsByClassName(" page-1-1")[0];
+      var music_player = document.getElementsByTagName("audio")[0];
+    var music_txt=document.getElementById("music_txt");
+  
+    music_player.play();
+    
+    function play_music() {
+      music_player.src = commonVar.bgMusicUrl;
+      music_player.loop = "loop";
+      music_player.play()
+    }
 
+    music_txt.onclick=function() {
+      if (music_player.paused) {
+        music_player.play();
+        showAndInnerhtml("打开", "musicRotate 2s linear infinite")
+      } else {
+        music_player.pause();
+        showAndInnerhtml("关闭", "")
+      }
+   
+        
+     }
 
     /*背景音乐*/
-    var music_player = document.getElementsByTagName("audio")[0];
-    var music_txt=document.getElementById("music_txt");
+  
     function objid(name) {
       return document.getElementById(name)
     }
@@ -787,20 +809,7 @@
       // document.body.appendChild(sound_div)
     }
 
-    function play_music() {
-      music_player.src = commonVar.bgMusicUrl;
-      music_player.loop = "loop";
-      music_player.play()
-    }
-
-    music_txt.onclick=function() {
-      if (music_player.paused) {
-        music_player.play();
-        showAndInnerhtml("打开", "musicRotate 2s linear infinite")
-      } else {
-        music_player.pause();
-        showAndInnerhtml("关闭", "")
-      }
+ 
 
       function showAndInnerhtml(openOrClose, aiStyle) {
         objid("sound_image").style.webkitAnimation = aiStyle;
