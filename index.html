@@ -760,9 +760,14 @@
      window.onload=function(){
       var  page1=document.getElementsByClassName(" page-1-1")[0];
       var music_player = document.getElementsByTagName("audio")[0];
+
+      var page1=document.getElementsByClassName(' page-1-1')[0];
     var music_txt=document.getElementById("music_txt");
+          $('.page1').one('touchstart',function(){
+            alert(1)
+            music_player.play();
+      });
   
-    music_player.play();
     
     function play_music() {
       music_player.src = commonVar.bgMusicUrl;
