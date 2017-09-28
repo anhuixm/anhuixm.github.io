@@ -629,19 +629,6 @@
                     <img class="comwx2img" src="css/heart.png">
                   </a></p>
               </div>
-              <!-- <script type="text/javascript>
-                      var wxLink2 = 'http://link.569.com/wxlink44.html';
-
-                              var wxHtml2 = '<div class="comwx2div">';
-                              wxHtml2 += '<p class="comwx2p">';
-                              wxHtml2 += '<a class="comwx2a" href="' + wxLink2 + '" target="_blank">';
-                              wxHtml2 += '<img class="comwx2img" src="css/heart">';
-                              wxHtml2 += '</a>';
-                              wxHtml2 += '</p>';
-                              wxHtml2 += '</div>';
-
-                              document.write(wxHtml2);
-                </script> -->
             </div>
           </div>
         </li>
@@ -670,7 +657,7 @@
     });
 
     var commonVar = {
-      bgMusicUrl: 'http://mp3.xatzz.com/zhongqiu/wezzj117.mp3',
+      bgMusicUrl: 'https://wechatdev.letuizu.com/Public/Audio/07.mp3',
 
       //分享接口地址、所用JS接口列表、分享内容设置
       jssdkUrl: 'http://wxapi2.qq269.com/jssdk.php',
@@ -723,11 +710,11 @@
         });
         wx.ready(commonVar.wxReady);
         wx.error(function (res) {
-          alert("网络异常，请刷新页面重试！")
+         
         })
       },
       error: function () {
-        alert("网络异常，请刷新重试！")
+      
       }
     });
 
@@ -792,7 +779,7 @@
       sound_div.style.cssText = "position:absolute;right:15px;top:25px;z-index:9999;visibility:visible;";
       sound_div.onclick = switchsound;
       bg_htm =
-        "<img id='sound_image' src='https://img.alicdn.com/imgextra/i2/815440245/TB2uuU4gFXXXXcnXpXXXXXXXXXX_!!815440245.png' width='50px' style='-webkit-animation:musicRotate 2s linear infinite;'>";
+        "<img id='sound_image' src='css/icon.png' width='50px' style='-webkit-animation:musicRotate 2s linear infinite;'>";
       txt_htm = "<div id='music_txt' style='color:white;position:absolute;left:-40px;top:30px;width:60px;'></div>";
       sound_div.innerHTML = bg_htm + txt_htm;
       document.body.appendChild(sound_div)
