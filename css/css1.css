@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.compicdiv {
+    width: 100%;
+    text-align: center;
+    font-size: 26px
+}
+
+.compica {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 0 0 1px #00fffc
+}
+
+.compicspan {
+    color: #ff0
+}
+
+.comzsdiv {
+    width: 100%;
+    font-size: 26px;
+    text-align: center
+}
+
+.comzsp1 {
+    width: 100%
+}
+
+.comzsp1a {
+    display: inline-block;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    background-color: #fa0909;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.comzsp2 {
+    padding-top: 10px
+}
+
+.comzsp2a {
+    text-decoration: none;
+    color: #e2c200;
+    font-weight: bold
+}
+
+.comzsp3 {
+    display: none;
+    color: #8c8c8c;
+    padding-top: 25px
+}
+
+.comwxdiv {
+    position: relative
+}
+
+.comwxp {
+    text-align: center;
+    text-shadow: 0 0 2px #ff7c00, 0px 0 3px #ff2707, 0px 0 5px #ff00cf
+}
+
+.comwxa {
+    text-decoration: none;
+    color: #fff
+}
+
+.comwxspan {
+    color: #ff0
+}
+
+.comwximg {
+    display: inline-block;
+    width: 200px;
+    animation: comwximg 3s ease both infinite
+}
+
+.comwx2div {
+    position: relative
+}
+
+.comwx2p {
+    text-align: center;
+    text-shadow: 0 0 2px #ff7c00, 0px 0 3px #ff2707, 0px 0 5px #ff00cf
+}
+
+.comwx2a {
+    text-decoration: none;
+    color: #fff
+}
+
+.comwx2img {
+    display: inline-block;
+    width: 340px;
+	animation: comwx2img 4s linear .1s both infinite;
+}
+
+/*7 2 3 4 3 6*/
+@keyframes comwx2img {
+    1% {
+        -webkit-transform: translateX(0%) scale3d(1, 1, 1)
+    }
+    8% {
+        -webkit-transform: translateX(0%) scale3d(1.1, 0.8, 1)
+    }
+    10% {
+        -webkit-transform: translateX(0%) scale3d(0.9, 1.2, 1)
+    }
+    13% {
+        -webkit-transform: translateX(0%) scale3d(1.05, 0.85, 1)
+    }
+    17% {
+        -webkit-transform: translateX(0%) scale3d(.95, 1.05, 1)
+    }
+    20% {
+        -webkit-transform: translateX(0%) scale3d(1.05, .95, 1)
+    }
+    26% {
+        -webkit-transform: translateX(0%) scale3d(1, 1, 1)
+    }
+}
