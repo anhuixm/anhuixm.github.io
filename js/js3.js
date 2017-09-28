@@ -16,7 +16,7 @@
         if (isAnimating) return;
         last.row = now.row;
         last.col = now.col;
-        console.log(last.row);
+     
         if (last.row != 10) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}else{
             now.row=1; now.col=1; pageMove(towards.up);	
         }
