@@ -91,7 +91,7 @@
     <div id='music_txt' style='color:white;position:absolute;right:30px;top:30px;width:60px;height:60px;z-index:9999;'>
      <img id='sound_image' src='css/icon.png' width='50px' style='-webkit-animation:musicRotate 2s linear infinite;'>
     </div>
-  <audio src="https://wechatdev.letuizu.com/Public/Audio/07.mp3" style="display:none;"  ></audio>
+  <audio src="https://wechatdev.letuizu.com/Public/Audio/02.mp3" style="display:none;"  ></audio>
   <div class="page page-1-1 page-current">
     <div class="wrap">
       <div style="width: 100%; height: 100%; overflow: hidden;position: absolute;z-index: -1">
@@ -760,8 +760,8 @@
 
 
     /*背景音乐*/
-    var music_player = new Audio();
-
+    var music_player = document.getElementsByTagName("audio")[0];
+    var music_txt=document.getElementById("music_txt");
     function objid(name) {
       return document.getElementById(name)
     }
@@ -793,7 +793,7 @@
       music_player.play()
     }
 
-    function switchsound() {
+    music_txt.onclick=function() {
       if (music_player.paused) {
         music_player.play();
         showAndInnerhtml("打开", "musicRotate 2s linear infinite")
@@ -804,11 +804,11 @@
 
       function showAndInnerhtml(openOrClose, aiStyle) {
         objid("sound_image").style.webkitAnimation = aiStyle;
-        objid("music_txt").innerHTML = openOrClose;
-        objid("music_txt").style.visibility = "visible";
-        setTimeout(function () {
-          objid("music_txt").style.visibility = "hidden"
-        }, 2500)
+        // objid("music_txt").innerHTML = openOrClose;
+        // objid("music_txt").style.visibility = "visible";
+        // setTimeout(function () {
+        //   objid("music_txt").style.visibility = "hidden"
+        // }, 2500)
       }
     };
   </script>
